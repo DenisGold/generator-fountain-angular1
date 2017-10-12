@@ -1,3 +1,106 @@
-<div class="component">
-  <h2>{{$ctrl.text}}</h2>
+<div class="m-content" ng-cloak>
+	<div class="m-portlet" block-ui-loading="$ctrl.pageLoading">
+		<div class="m-portlet__body">
+			
+			<!--begin: Header filters -->
+			<div class="m-form m-form--label-align-right">
+				<div class="row align-items-center">
+					<div class="col-xl-8 order-2 order-xl-1">
+					</div>
+					<div class="col-xl-4 order-1 order-xl-2 m--align-right">
+						
+						<!-- ************************ -->
+						<!-- UPDATE KEY OF PERMISSION -->
+						<!-- ************************ -->
+						<button type="button" ng-click="$ctrl.openCreate()" class="btn btn-outline-info m-btn m-btn--custom m-btn--icon m-btn--air" crm-access="crm.ACCESS_KEY_OBJECT.store" crm-access-hide>
+							<span>
+								<i class="flaticon-add"></i>
+								<span>
+									Добавить объект
+								</span>
+							</span>
+						</button>
+						<div class="m-separator m-separator--dashed d-xl-none"></div>
+					</div>
+				</div>
+			</div>
+			<!--end: Header filters -->
+					
+			<div ng-model="$ctrl.items" class="m_datatable m-datatable m-datatable--default m-datatable--loaded">
+				
+				<!--begin: Table view -->
+				<table class="m-datatable__table" style="display: block; height: auto;">
+					<thead class="m-datatable__head">
+						<tr class="m-datatable__row">
+							<th class="m-datatable__cell m-datatable__cell--sort" width="5%">
+								<span>ID</span>
+							</th>
+							<th class="m-datatable__cell m-datatable__cell--sort" width="10%">
+								<span></span>
+							</th>
+						</tr>
+					</thead>
+					<tbody ng-if="$ctrl.items !== null && $ctrl.items.length" class="m-datatable__body">
+						<tr ng-repeat="item in $ctrl.items track by $index" class="m-datatable__row">
+							<td class="m-datatable__cell" width="5%">
+								{{ item.id }}
+							</td>
+							
+							<!-- ACTIONS -->
+							<td class="m-datatable__cell" width="10%">
+								
+								<!-- ************************ -->
+								<!-- UPDATE KEY OF PERMISSION -->
+								<!-- ************************ -->
+								<span>		
+									<a class="m-portlet__nav-link btn m-btn m-btn--hover-success m-btn--icon m-btn--icon-only m-btn--pill" ng-click="$ctrl.openEdit(item)" crm-access="crm.ACCESS_KEY_OBJECT.update" crm-access-hide>
+										<i class="la flaticon-cogwheel"></i>
+									</a>
+									<a class="m-portlet__nav-link btn m-btn m-btn--hover-danger m-btn--icon m-btn--icon-only m-btn--pill" ng-click="$ctrl.openDestroy(item)" crm-access="crm.ACCESS_KEY_OBJECT.destroy" crm-access-hide>
+										<i class="la la-trash"></i>
+									</a>
+								</span>
+							</td>
+							
+						</tr>
+					</tbody>
+				</table>
+				<!--end: Table view -->
+				
+				<!--begin: Empty alert view -->
+				<div ng-if="$ctrl.items !== null && !$ctrl.items.length" class="alert m-alert--default" role="alert">
+					Еще не было создано ни единого объекта!
+				</div>
+				<!--end: Empty alert view -->
+				
+				<!--begin: Paginate -->
+				<div ng-if="$ctrl.items !== null && $ctrl.items.length" class="m-datatable__pager m-datatable--paging-loaded clearfix">
+					<paging class="crm-data-paginator"
+							page="$ctrl.paging.currentPage" 
+							page-size="$ctrl.paging.pageSize"
+							paging-action="$ctrl.paginateAction(page)" 
+							total="$ctrl.paging.totalItems" 
+							ul-class="m-datatable__pager-nav" 
+							active-class="m-datatable__pager-link--active"
+							disabled-class="m-datatable__pager-link--disabled"
+							show-prev-next="true"
+							show-first-last="true"    
+							text-next-class="crm-pager-link la la-angle-right"
+						    text-prev-class="crm-pager-link la la-angle-left"
+						    text-first-class="crm-pager-link crm-pager-link--first la la-angle-double-left"
+						    text-last-class="crm-pager-link crm-pager-link--last la la-angle-double-right">
+					</paging>
+					<div ng-model="$ctrl.counts" ng-if="$ctrl.counts" class="m-datatable__pager-info">
+						<md-input-container class="dropdown-select md-no-underline" style="min-width: 150px;">
+							<md-select ng-model="$ctrl.filters.count" md-selected-text="$ctrl.filters.count.name" aria-label="Количество записей">
+								<md-option ng-value="count" ng-repeat="count in $ctrl.counts">{{ count.name }}</md-option>
+							</md-select>
+						</md-input-container>
+					</div>
+				</div>
+			</div>
+			<!--end: Paginate -->
+			
+		</div>
+	</div>
 </div>

@@ -20,8 +20,8 @@
     "angular"
   ],
   "dependencies": {
-    "fountain-generator": "^2.0.0",
-    "generator-fountain-gulp": "^2.0.0"
+    "fountain-generator": "^1.0.0",
+    "generator-fountain-gulp": "^1.0.0"
   },
   "devDependencies": {
     "ava": "^0.18.2",

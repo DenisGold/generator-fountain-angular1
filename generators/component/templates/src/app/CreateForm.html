@@ -1,0 +1,38 @@
+<md-bottom-sheet class="m-content">
+	<md-subheader ng-cloak>Новый объект</md-subheader>
+	
+	<!-- ************************ -->
+	<!-- UPDATE KEY OF PERMISSION -->
+	<!-- ************************ -->
+	<div class="row" crm-access="crm.ACCESS_KEY_OBJECT.store" crm-access-hide>
+		<div class="col-sm-1 col-md-2 col-lg-2"></div>
+		<div class="col-sm-10 col-md-8 col-lg-8" ng-cloak>
+			<form name="createObject" class="m-form" ng-submit="vm.create(createObject)" novalidate>
+				<div class="m-portlet__body">
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<md-input-container class="form-group m-form__group">
+								<label>Название</label>
+								<input type="text" class="form-control m-input" autocomplete="off" name="name" md-no-astericks ng-model="vm.newItem.name" required>
+								<div ng-messages="createObject.name.$error">
+									<div ng-message="required" class="form-control-feedback">Название объекта должно быть заполнено</div>
+								</div>
+							</md-input-container>
+						</div>
+					</div>
+				</div>
+				<div class="m-portlet__foot m-portlet__foot--fit">
+					<div class="m-form__actions m-form__actions m--align-right">
+						<button md-ink-ripple="{{ vm.waveColor('metal') }}" type="submit" class="btn btn-outline-success" button-loading="vm.newItemLoading">
+							Добавить объект
+						</button>
+						<button md-ink-ripple="{{ vm.waveColor('metal') }}" type="button" class="btn btn-secondary" ng-click="vm.cancel()">
+							Отмена
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+</md-bottom-sheet>									
