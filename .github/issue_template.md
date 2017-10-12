@@ -7,8 +7,8 @@
 	- [Our Slack](https://fountain-slack.herokuapp.com/)
 	- [Stack Overflow](https://stackoverflow.com/questions/tagged/fountain)
 - Ensure the issue isn't already reported.
-- Should be reproducible with the latest generator-fountain-angular1 version.
-	- (Ensure `npm ls -g --depth=0 2>/dev/null | grep generator-fountain` matches ![](https://img.shields.io/npm/v/generator-fountain-angular1.svg))
+- Should be reproducible with the latest generator-crm-angularjs version.
+	- (Ensure `npm ls -g --depth=0 2>/dev/null | grep generator-fountain` matches ![](https://img.shields.io/npm/v/generator-crm-angularjs.svg))
 
 *Delete the above section and the instructions in the sections below before submitting*
 
@@ -31,7 +31,7 @@ Copy the content from `.yo-rc.json`:
 
 ```json
 {
-  "generator-fountain-angular1": {
+  "generator-crm-angularjs": {
     ...
   }
 }

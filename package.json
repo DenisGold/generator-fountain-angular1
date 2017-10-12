@@ -1,14 +1,12 @@
 {
-  "name": "generator-fountain-angular1",
-  "version": "1.0.0",
+  "name": "generator-crm-angularjs",
+  "version": "2.0.0",
   "description": "Yeoman Fountain generator to scaffold a webapp with Angular 1 written in ES6 (Babel), TypeScript through Webpack or SystemJS including tools Gulp 4, ESLint, Browsersync and Karma",
   "homepage": "http://fountainjs.io/",
-  "repository": "fountainjs/generator-fountain-angular1",
-  "author": "The Fountain Team",
+  "repository": "fountainjs/generator-crm-angularjs",
+  "author": "Casa di Moda CRM",
   "contributors": [
-    "Matthieu Lux <matthieu.lux@gmail.com> (http://swiip.github.io/)",
-    "Mehdy Dara <mdara@eleven-labs.com> (http://eleven-labs.com/)",
-    "Micael Mbagira <micael.mbagira@icloud.com> (http://micaelmbagira.github.io)"
+    "Denis Stoliarchuk <dartius@mail.ru> (https://github.com/DenisGold/)"
   ],
   "main": "index.js",
   "keywords": [
@@ -22,8 +20,8 @@
     "angular"
   ],
   "dependencies": {
-    "fountain-generator": "^1.0.0",
-    "generator-fountain-gulp": "^1.0.0"
+    "fountain-generator": "^2.0.0",
+    "generator-fountain-gulp": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^0.18.2",

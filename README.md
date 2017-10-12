@@ -4,8 +4,8 @@
   </a>
 </p>
 
-[![Build Status](https://travis-ci.org/FountainJS/generator-fountain-angular1.svg?branch=master)](https://travis-ci.org/FountainJS/generator-fountain-angular1)
-[![codecov](https://codecov.io/gh/FountainJS/generator-fountain-angular1/branch/master/graph/badge.svg)](https://codecov.io/gh/FountainJS/generator-fountain-angular1)
+[![Build Status](https://travis-ci.org/FountainJS/generator-crm-angularjs.svg?branch=master)](https://travis-ci.org/FountainJS/generator-crm-angularjs)
+[![codecov](https://codecov.io/gh/FountainJS/generator-crm-angularjs/branch/master/graph/badge.svg)](https://codecov.io/gh/FountainJS/generator-crm-angularjs)
 [![Slack](http://slackin.fountainjs.io/badge.svg)](http://slackin.fountainjs.io/)
 
 
@@ -60,9 +60,9 @@ node --version && npm --version
 npm install -g yo
 ```
 
-##### Install `generator-fountain-angular1`:
+##### Install `generator-crm-angularjs`:
 ```
-npm install -g generator-fountain-angular1
+npm install -g generator-crm-angularjs
 ```
 
 
@@ -117,7 +117,7 @@ yo fountain-angular1:component --name myComponent --dir components/game
 ### [Start development](http://fountainjs.io/doc/usage/#use-npm-scripts)
 
 
-## [Changelog](https://github.com/FountainJS/generator-fountain-angular1/releases)
+## [Changelog](https://github.com/FountainJS/generator-crm-angularjs/releases)
 
 
 ## [Contributing](http://fountainjs.io/doc/contributing)
