@@ -21,10 +21,6 @@
 		}
 	}
 	
-	<% if (modules === 'inject') { -%>
 	<% include inject/service.js %>
-	<% } else { -%>
-	<% include modules/service.js %>
-	<% } -%>
 	
 })();

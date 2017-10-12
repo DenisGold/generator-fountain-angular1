@@ -8,8 +8,8 @@ module.exports = fountain.Base.extend({
     const props = {
       serviceName: titleCase(name),
       serviceLowerCaseName: titleCase(name).toLowerCase(),
-      modules: this.config.get('props').modules,
-      js: this.config.get('props').js,
+      //modules: this.config.get('props').modules,
+      //js: this.config.get('props').js,
       framework: 'angular1',
       name
     };

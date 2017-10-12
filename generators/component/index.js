@@ -9,13 +9,13 @@ module.exports = fountain.Base.extend({
     const props = {
       componentName: lowerCase(name),
       className: titleCase(name),
-      modules: this.config.get('props').modules,
-      js: this.config.get('props').js,
+      //modules: this.config.get('props').modules,
+      //js: this.config.get('props').js,
       framework: 'angular1',
       name,
-      templateUrl: this.config.get('props').modules === 'systemjs' ? `src/${path}/${name}.html` : `${path}/${name}.html`,
-      createFormTemplate: this.config.get('props').modules === 'systemjs' ? `src/${path}/CreateForm.html` : `${path}/CreateForm.html`,
-      editFormTemplate: this.config.get('props').modules === 'systemjs' ? `src/${path}/EditForm.html` : `${path}/EditForm.html`,
+      templateUrl: `${path}/${name}.html`,
+      createFormTemplate: `${path}/CreateForm.html`,
+      editFormTemplate: `${path}/EditForm.html`,
       relativeTemplateUrl: `./${name}.html`
     };
     this.copyTemplate(`src/app/component.js`, `src/${path}/${name}.js`, props);

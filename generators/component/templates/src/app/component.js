@@ -106,10 +106,6 @@
 		vm.editAction = editAction;
 	}
 	
-	<% if (modules === 'inject') { -%>
 	<% include inject/component.js %>
-	<% } else { -%>
-	<% include modules/component.js %>
-	<% } -%>
 	
 })();

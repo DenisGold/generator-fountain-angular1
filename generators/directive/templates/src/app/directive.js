@@ -14,10 +14,6 @@
 		};
 	}
 	
-	<% if (modules === 'inject') { -%>
 	<% include inject/directive.js %>
-	<% } else { -%>
-	<% include modules/directive.js %>
-	<% } -%>
 	
 })();
