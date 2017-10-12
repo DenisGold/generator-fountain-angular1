@@ -1,9 +1,9 @@
 {
   "name": "generator-crm-angularjs",
   "version": "2.0.0",
-  "description": "Yeoman Fountain generator to scaffold a webapp with Angular 1 written in ES6 (Babel), TypeScript through Webpack or SystemJS including tools Gulp 4, ESLint, Browsersync and Karma",
-  "homepage": "http://fountainjs.io/",
-  "repository": "fountainjs/generator-crm-angularjs",
+  "description": "Yeoman CRM generator to scaffold a webapp with Angular 1 written in ES6 (Babel), TypeScript through Webpack or SystemJS including tools Gulp 4, ESLint, Browsersync and Karma",
+  "homepage": "http://nevera.space/",
+  "repository": "DenisGold/generator-fountain-angular1",
   "author": "Casa di Moda CRM",
   "contributors": [
     "Denis Stoliarchuk <dartius@mail.ru> (https://github.com/DenisGold/)"

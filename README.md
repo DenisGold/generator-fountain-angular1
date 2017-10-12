@@ -4,10 +4,6 @@
   </a>
 </p>
 
-[![Build Status](https://travis-ci.org/FountainJS/generator-crm-angularjs.svg?branch=master)](https://travis-ci.org/FountainJS/generator-crm-angularjs)
-[![codecov](https://codecov.io/gh/FountainJS/generator-crm-angularjs/branch/master/graph/badge.svg)](https://codecov.io/gh/FountainJS/generator-crm-angularjs)
-[![Slack](http://slackin.fountainjs.io/badge.svg)](http://slackin.fountainjs.io/)
-
 
 # Fountain Angular 1 Generator
 
@@ -31,18 +27,6 @@ To take profit of the best of the Yeoman infrastructure, we heavily relies on th
 Thereby, each needs of your future application will be addressed by a dedicated Yeoman generator (each will be used depending of the options you selected or not).
 
 More informations in [DESIGN.md](http://fountainjs.io/doc/design).
-
-
-### Web tooling layer
-[![Gulp](http://fountainjs.io/assets/imgs/gulp.png)](https://github.com/FountainJS/generator-fountain-gulp)
-[![ESLint](http://fountainjs.io/assets/imgs/eslint.png)](https://github.com/FountainJS/generator-fountain-eslint)
-[![BrowserSync](http://fountainjs.io/assets/imgs/browsersync.png)](https://github.com/FountainJS/generator-fountain-browsersync)
-[![Karma](http://fountainjs.io/assets/imgs/karma.png)](https://github.com/FountainJS/generator-fountain-karma)
-
-### Module management layer
-[![Webpack](http://fountainjs.io/assets/imgs/webpack.png)](https://github.com/FountainJS/generator-fountain-webpack)
-[![SystemJS](http://fountainjs.io/assets/imgs/systemjs.png)](https://github.com/FountainJS/generator-fountain-systemjs)
-[![Bower](http://fountainjs.io/assets/imgs/bower.png)](https://github.com/FountainJS/generator-fountain-inject)
 
 
 ## Usage
@@ -73,9 +57,9 @@ npm install -g generator-crm-angularjs
 mkdir my-new-project && cd my-new-project
 ```
 
-##### Run `yo fountain-angular1`, and select desired technologies:
+##### Run `yo crm-angularjs`, and select desired technologies:
 ```
-yo fountain-angular1
+yo crm-angularjs
 ```
 #### Use NPM scripts
 
@@ -111,7 +95,7 @@ Each generator has 2 options:
 **Example:**
 
 ```
-yo fountain-angular1:component --name myComponent --dir components/game
+yo crm-angularjs:component --name myComponent --dir components/game
 ```
 
 ### [Start development](http://fountainjs.io/doc/usage/#use-npm-scripts)
