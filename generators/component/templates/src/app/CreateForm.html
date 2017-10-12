@@ -1,10 +1,7 @@
 <md-bottom-sheet class="m-content">
 	<md-subheader ng-cloak>Новый объект</md-subheader>
 	
-	<!-- ************************ -->
-	<!-- UPDATE KEY OF PERMISSION -->
-	<!-- ************************ -->
-	<div class="row" crm-access="crm.ACCESS_KEY_OBJECT.store" crm-access-hide>
+	<div class="row" crm-access="crm.<%- componentName %>.store" crm-access-hide>
 		<div class="col-sm-1 col-md-2 col-lg-2"></div>
 		<div class="col-sm-10 col-md-8 col-lg-8" ng-cloak>
 			<form name="createObject" class="m-form" ng-submit="vm.create(createObject)" novalidate>

@@ -1,10 +1,7 @@
 <md-bottom-sheet class="m-content">
 	<md-subheader ng-cloak>Редактировать объект "{{ vm.item.name }}"</md-subheader>
 	
-	<!-- ************************ -->
-	<!-- UPDATE KEY OF PERMISSION -->
-	<!-- ************************ -->
-	<div class="row" crm-access="crm.ACCESS_KEY_OBJECT.update" crm-access-hide>
+	<div class="row" crm-access="crm.<%- componentName %>.update" crm-access-hide>
 		<div class="col-sm-1 col-md-2 col-lg-2"></div>
 		<div class="col-sm-10 col-md-8 col-lg-8" ng-cloak>
 			<form name="editObject" class="m-form" ng-submit="vm.edit(editObject)" novalidate>
