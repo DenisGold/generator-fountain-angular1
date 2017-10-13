@@ -1,3 +1,3 @@
-angular
-	.module('app')
-	.service('<%- serviceName %>', ['LaraModel', 'CacheFactory', <%- serviceName %>]);
+	angular
+		.module('app')
+		.factory('<%- serviceName %>', ['LaraModel', 'CacheFactory', <%- serviceName %>]);

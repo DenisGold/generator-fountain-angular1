@@ -7,10 +7,11 @@ module.exports = fountain.Base.extend({
     const path = this.options.dir ? `src/app/${this.options.dir}` : `src/app`;
     const props = {
       directiveName: lowerCase(name),
+      templateUrl: '${path}/${name}.html',
       //modules: this.config.get('props').modules,
       //js: this.config.get('props').js,
       framework: 'angular1',
-      name
+      name,
     };
     this.copyTemplate(`src/app/directive.js`, `${path}/${name}.js`, props);
     this.copyTemplate(`src/app/directive.spec.js`, `${path}/${name}.spec.js`, props);
