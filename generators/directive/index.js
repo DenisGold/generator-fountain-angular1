@@ -7,7 +7,7 @@ module.exports = fountain.Base.extend({
     const path = this.options.dir ? `src/app/${this.options.dir}` : `src/app`;
     const props = {
       directiveName: lowerCase(name),
-      templateUrl: path+'/view.html',
+      templateUrl: path+'view.html',
       //modules: this.config.get('props').modules,
       //js: this.config.get('props').js,
       framework: 'angular1',
