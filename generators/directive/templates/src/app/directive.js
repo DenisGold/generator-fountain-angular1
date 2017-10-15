@@ -36,5 +36,4 @@
 	}
 	
 	<% include inject/directive.js %>
-	
 })();

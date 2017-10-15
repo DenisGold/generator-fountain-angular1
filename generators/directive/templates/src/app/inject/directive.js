@@ -1,3 +1,4 @@
-	angular
-		.module('app')
-		.directive('<%- directiveName %>', <%- directiveName %>);
+angular
+	.module('app')
+	.directive('<%- directiveName %>', <%- directiveName %>);
+	

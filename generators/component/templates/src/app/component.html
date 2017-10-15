@@ -1,22 +1,16 @@
 <div class="m-content" ng-cloak>
+	<!-- Action button -->
+	<action-button action="$ctrl.openCreate" access="crm.<%- componentName %>.store"></action-button>
+	
 	<div class="m-portlet" block-ui-loading="$ctrl.pageLoading">
 		<div class="m-portlet__body">
 			
-			<!--begin: Header filters -->
+			<!--begin: Header filters
 			<div class="m-form m-form--label-align-right">
 				<div class="row align-items-center">
 					<div class="col-xl-8 order-2 order-xl-1">
 					</div>
 					<div class="col-xl-4 order-1 order-xl-2 m--align-right">
-						<button type="button" ng-click="$ctrl.openCreate()" class="btn btn-outline-info m-btn m-btn--custom m-btn--icon m-btn--air" crm-access="crm.<%- componentName %>.store" crm-access-hide>
-							<span>
-								<i class="flaticon-add"></i>
-								<span>
-									Добавить объект
-								</span>
-							</span>
-						</button>
-						<div class="m-separator m-separator--dashed d-xl-none"></div>
 					</div>
 				</div>
 			</div>

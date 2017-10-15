@@ -5,9 +5,10 @@ module.exports = fountain.Base.extend({
     const name = this.options.name || 'directive';
     const lowerCase = string => string.charAt(0).toLowerCase() + string.slice(1);
     const path = this.options.dir ? `src/app/${this.options.dir}` : `src/app`;
+    const templateUrl = this.options.dir ? `/app/${this.options.dir}/view.html` : `/app/view.html`;
     const props = {
       directiveName: lowerCase(name),
-      templateUrl: path+'view.html',
+      templateUrl: templateUrl,
       //modules: this.config.get('props').modules,
       //js: this.config.get('props').js,
       framework: 'angular1',
