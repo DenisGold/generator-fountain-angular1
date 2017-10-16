@@ -1,6 +1,6 @@
 <div class="m-content" ng-cloak>
 	<!-- Action button -->
-	<action-button action="$ctrl.openCreate" access="crm.<%- componentName %>.store"></action-button>
+	<action-button action-callback="$ctrl.openCreate()" access="crm.<%- componentName %>.store"></action-button>
 	
 	<div class="m-portlet" block-ui-loading="$ctrl.pageLoading">
 		<div class="m-portlet__body">
