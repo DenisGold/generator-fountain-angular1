@@ -1,6 +1,6 @@
 {
   "name": "generator-crm-angularjs",
-  "version": "2.1.2",
+  "version": "2.1.5",
   "description": "Yeoman CRM generator to scaffold a webapp with Angular 1 written in ES6 (Babel), TypeScript through Webpack or SystemJS including tools Gulp 4, ESLint, Browsersync and Karma",
   "homepage": "https://indeema.com/",
   "repository": "DenisGold/generator-fountain-angular1",
