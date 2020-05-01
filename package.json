@@ -21,7 +21,8 @@
   ],
   "dependencies": {
     "fountain-generator": "^1.0.0",
-    "generator-fountain-gulp": "^1.0.0"
+    "generator-fountain-gulp": "^1.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "ava": "^0.18.2",
@@ -48,10 +49,12 @@
   },
   "scripts": {
     "test": "gulp",
-    "prepublish": "gulp prepublish"
+    "prepublish": "npm run snyk-protect && gulp prepublish",
+    "snyk-protect": "snyk protect"
   },
   "license": "MIT",
   "eslintConfig": {
     "extends": "xo-space/esnext"
-  }
+  },
+  "snyk": true
 }
